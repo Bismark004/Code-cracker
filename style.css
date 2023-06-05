@@ -1,0 +1,92 @@
+#step {
+  list-style: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 100vw;
+  background-color: navajowhite;
+  color: ghostwhite;
+  margin-bottom: 20px;
+}
+header h1{
+  text-align: center;
+  text-decoration: underline;
+}
+
+section{
+  width: 80%;
+  margin: auto;
+  border: 3px ridge blueviolet;
+  display: flex;
+  flex-direction: column;
+  
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.input input{
+  width: 200px;
+  height: 30px;
+  margin-right: 5px;
+}
+.input button{
+  width: 60px;
+  color: white;
+  background-color: rgb(107, 107, 155);
+  font-size: 15px;
+}
+.input button:hover{
+  color: blue;
+  background-color: transparent;
+}
+.numbers{
+  order: 1px solid red;
+  width: 80%;
+  margin: auto;
+}
+
+#o_p{
+  border-bottom: 3px solid red;
+  margin-top: 10px;
+  color: blue;
+}
+
+#is_game{
+  color: red;
+  font-style: italic;
+}
+.results{
+  order: 1px solid red;
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+}
+
+#rules{
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  
+}
+
+#rules h1{
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+
+}
+
+#rules ul{
+  font-size: 20px;
+
+}
+
+
