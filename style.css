@@ -1,92 +1,120 @@
-#step {
-  list-style: none;
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-header{
-  width: 100vw;
+
+header {
+  width: 100%;
   background-color: navajowhite;
   color: ghostwhite;
   margin-bottom: 20px;
 }
-header h1{
+
+header h1 {
   text-align: center;
   text-decoration: underline;
 }
 
-section{
-  width: 80%;
+section {
+  width: 100%;
   margin: auto;
   border: 3px ridge blueviolet;
   display: flex;
   flex-direction: column;
-  
-}
-.input {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  align-items: center;
 }
 
-.input input{
-  width: 200px;
-  height: 30px;
-  margin-right: 5px;
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  border: 1px solid red;
 }
-.input button{
-  width: 60px;
+
+.input input {
+  width: 100%;
+  max-width: 200px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.input button {
+  width: 100%;
+  max-width: 100px;
   color: white;
   background-color: rgb(107, 107, 155);
   font-size: 15px;
 }
-.input button:hover{
+
+.input button:hover {
   color: blue;
   background-color: transparent;
 }
-.numbers{
-  order: 1px solid red;
+
+.numbers {
   width: 80%;
-  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#o_p{
+#o_p {
   border-bottom: 3px solid red;
   margin-top: 10px;
   color: blue;
 }
 
-#is_game{
+#is_game {
   color: red;
   font-style: italic;
 }
-.results{
-  order: 1px solid red;
+
+.results {
   width: 80%;
-  margin: auto;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 
-#rules{
+#rules {
   width: 80%;
   margin: auto;
-  height: 300px;
-  
+  height: auto;
 }
 
-#rules h1{
+#rules h1 {
   text-align: center;
   text-decoration: underline;
   color: red;
-
 }
 
-#rules ul{
+#rules ul {
   font-size: 20px;
-
 }
 
+/* Media Queries */
 
+@media screen and (max-width: 600px) {
+  .input {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input input {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .input button {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .numbers {
+    width: 100%;
+  }
+  
+  #rules {
+    height: auto;
+  }
+}
